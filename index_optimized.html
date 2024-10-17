@@ -6,21 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email Template</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f5f5f5;
-        }
-
-        .container {
-            background: linear-gradient(to bottom, #001f3f, #012f61);
-            padding: 20px;
-            max-width: 600px;
-            margin: 0 auto;
-            border-radius: 10px;
-        }
-
         .logo {
             background: url('./White Bg.png') no-repeat center;
             text-align: center;
@@ -28,12 +13,14 @@
             color: #000;
             font-size: 24px;
             font-weight: 700;
+            margin-top: -25px;
         }
 
         .main-content {
             background: linear-gradient(to right, #00b3f8, #0161eb);
             border-radius: 20px;
             margin-bottom: 20px;
+            margin: 20px;
             padding: 20px;
             color: #fff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -41,7 +28,7 @@
 
         .main-content img {
             border-radius: 10px;
-            max-width: 100px;
+            max-width: 231px;
             height: auto;
         }
 
@@ -74,6 +61,7 @@
         .footer {
             text-align: center;
             padding: 20px;
+            margin-bottom: -20px;
             background-color: #fff;
             color: #333;
             font-size: 12px;
@@ -100,36 +88,71 @@
             border-top: 1px solid #ddd;
         }
 
+
         @media screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
             .main-content {
-                width: 100% !important;
-                margin: 0 auto !important;
-                padding: 10px !important;
+                width: 100%  ;
+                margin: 10px 0  ;
+                padding: 10px  ;
+                border-radius: 10px  ;
+            }
+
+            .main-content table {
+                width: 100%  ;
             }
 
             .main-content td {
-                display: block !important;
-                width: 100% !important;
-                text-align: center !important;
+                display: block  ;
+                width: 100%  ;
+                text-align: center  ;
+                padding: 0  ;
+            }
+
+            .main-content .text {
+                padding-right: 0  ;
+                padding-bottom: 10px  ;
             }
 
             .main-content img {
-                width: 100% !important;
-                height: auto !important;
-                margin: 10px 0 !important;
+                width: 100%  ;
+                max-width: 100%  ;
+                height: auto  ;
+                margin: 10px 0  ;
             }
 
             .button {
-                width: auto !important;
+                width: auto  ;
+                padding: 10px 20px  ;
+                margin: 10px 0  ;
+            }
+
+            .logo {
+                padding: 20px 0  ;
+                font-size: 20px  ;
+            }
+
+            .footer {
+                font-size: 10px  ;
+                padding: 10px  ;
+            }
+
+            .footer a {
+                font-size: 10px ;
             }
         }
     </style>
 </head>
 
-<body>
-    <div class="container">
+<body style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; background-color: white;">
+    <div class="container" style="background: url(Frame\ 4648875.png) no-repeat center; padding: 20px; max-width: 600px; margin: 0 auto; border-radius: 10px;">
         <!-- LOGO SECTION -->
-        <div class="logo">LOGO HERE</div>
+        <div class="logo">
+            LOGO HERE
+        </div>
 
         <!-- MAIN CONTENT SECTION 1 -->
         <div class="main-content">
@@ -195,7 +218,10 @@
                 <a href="tel:1234566789">1234566789</a>
             </p>
             <hr>
-            <p>Some games and bonuses may not be available in your country. For more details, <a href="#">You can subscribe</a></p>
+            <p>Some games and bonuses may not be available in your country.</p>
+            <p>You take all the credit for the fact that you have registered on our site.
+                For a return link with us, please send a copy to the whole sheet.
+                You can <a href="#" style="text-decoration: #0161eb underline; color: blue;">subscribe</a></p>
         </div>
     </div>
 </body>
